@@ -1,5 +1,5 @@
 const baseUrl = 'https://pixabay.com/api/';
-const key = '&key=15216450-d096caa7dd5d740f777344039';
+const key = '&key=15364832-46e4bda7ae3c94390e1b1153f';
 
 export default {
     page: 1,
