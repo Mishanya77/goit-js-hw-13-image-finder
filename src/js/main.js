@@ -67,10 +67,11 @@ function btnLoadMoreHandler(e) {
   apiService.fetchImage().then(hits => {
     const marcup = buildImageListItems(hits);
     insertImageItems(marcup);
-    // window.scrollBy({
-    //   // top: 500,
-    //   behavior: "smooth"
-    // });
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth',
+    });
+    // window.scrollBy(0, window.innerHeight);
   });
 }
 
