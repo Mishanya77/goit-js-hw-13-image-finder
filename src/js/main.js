@@ -73,7 +73,7 @@ function btnLoadMoreHandler(e) {
       top: document.body.scrollHeight,
       behavior: 'smooth',
     });
-    // window.scrollBy(0, window.innerHeight);
+    //   window.scrollBy(0, window.innerHeight);
     
   });
 }
