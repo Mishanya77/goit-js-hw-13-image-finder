@@ -7,6 +7,8 @@ import "basiclightbox/src/styles/main.scss";
 import PNotify from "pnotify/dist/es/PNotify.js";
 import "pnotify/dist/PNotifyBrightTheme.css";
 PNotify.defaults.delay = 3000;
+import PNotifyButtons from "../../node_modules/pnotify/dist/es/PNotifyButtons";
+
 
 const refs = {
   searchForm: document.querySelector("#search-form"),
@@ -67,8 +69,9 @@ function btnLoadMoreHandler(e) {
   apiService.fetchImage().then(hits => {
     const marcup = buildImageListItems(hits);
     insertImageItems(marcup);
+    window.scrollBy(0, window.innerHeight);
     // window.scrollBy({
-    //   // top: 500,
+    //   top: 900,
     //   behavior: "smooth"
     // });
   });

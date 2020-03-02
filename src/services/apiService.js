@@ -12,6 +12,7 @@ export default {
             .then(parsedResponse => {
                 this.incrementPage()
                 return parsedResponse.hits
+                console.log(parsedResponse.hits)
             });
     },
     get searchQuery() {
